@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
@@ -62,7 +63,9 @@ public class ChatView extends LinearLayout implements MessageCallback {
         this.botName = botName;
         this.directlinePrimaryKey = directlinePrimaryKey;
         from = new From();
-        from.setId("user1");
+        Random rnd = new Random();
+        int n =  rnd.nextInt(900000);
+        from.setId("user"+n);
         initialize(context);
     }
 
