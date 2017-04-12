@@ -21,8 +21,9 @@ ex:
     }
 
 **Add library in module gradle**
-
-compile 'com.github.lakshmansai:DirectLineAndroidLibrary:master'
+`
+    compile 'com.github.lakshmansai:DirectLineAndroidLibrary:1.1'
+`
 
 **Configure directline**
 
